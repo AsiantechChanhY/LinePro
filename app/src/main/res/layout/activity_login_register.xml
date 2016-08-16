@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvlinepro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Line Pro"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/lnlinepro"
+        android:background="#000"/>
+
+    <LinearLayout
+        android:id="@+id/lnlinepro"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/imglogin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Log In"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/imgregister"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
